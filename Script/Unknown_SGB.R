@@ -28,4 +28,4 @@ p1 <- p1 + xlim(0.5, 2.5)
 
 plot <- plot_grid(p1, labels=c(''),label_size = 10,ncol=1)
 
-save_plot("COVID19_FigS3.pdf", plot, base_width = 4,base_height =3)
+save_plot("COVID19_Fig.pdf", plot, base_width = 4,base_height =3)
