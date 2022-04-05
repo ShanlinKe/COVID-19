@@ -3,7 +3,7 @@ Dissecting the Role of the Human Microbiome in COVID-19 via Metagenome-assembled
 
 # Introduction
 
-This REPO contains in-house scripts (R, Python), data and detailed instructions for users to reproduce much of the analyses we have done for our manuscript titled "Dissecting the Role of the Human Microbiome in COVID-19 via Metagenome-assembled Genomes".
+This REPO contains in-house scripts, data and detailed instructions for users to reproduce much of the analyses we have done for our manuscript titled "Dissecting the Role of the Human Microbiome in COVID-19 via Metagenome-assembled Genomes".
 
 If further assisstance is required, please do not hesitate to contact me by raise an issue in the "Issues" section of this REPO.
 
@@ -43,11 +43,31 @@ A list of databases and their URLs for downloads:
 | GTDB-tk | https://gtdb.ecogenomic.org/downloads |
 | Kofam/Swissprot/Trembl/RefSeq | https://github.com/cruizperez/MicrobeAnnotator/tree/master/microbeannotator/database |
 
+# Usage
+The Example workflow is divided into two folders: 'Pipeline' and 'Scripts'. 'Pipeline' folder contains details for the public softwares and their parameters used for our project, while the 'Scripts' folder contains in-house scripts for further data analysis and visualisation. 
 
+Construction of the metagenome-assembled genomes
 
+Part1: 01_quality_control.sh
+Pre-processing of the raw sequencing data in FASTQ format, including quality control (removal of low-quality and adaptor sequences) and removal of host genome and contaminations from human host.
 
+Part2: 02_assembly.sh
+Metagenomic assembly: Assemble short reads into long contigs.
 
+Part3: 03_binning.sh
+Metagenomic binning: bin contigs into MAGs. 
 
+Part4: 04_refine.sh
+Consolidate bin sets.
+
+Part5: 05_MAGs_taxonomy.sh
+High-quality bins were identified to obtain MAGs. The taxonomic annotation was then performed for all MAGs to determine their taxonomic identities and phylogenetic relationships.
+
+Part6: 06_MAGs_function.sh
+MAGs were subjected to tools including Prokka to identify protein-coding and non-coding genes. MicrobeAnnotator uses an iterative approach to annotate microbial genomes (Bacteria, Archaea and Virus) starting from proteins predicted using your favorite ORF prediction tool, e.g. Prodigal. The iterative approach is composed of three or five main steps (depending on the flavor of MicrobeAnnotator you run). Search of initial protein dataset using KOFamscan, extraction of unannotated proteins. Search of proteins extracted in the previous step using UniProt Swissprot database. Extract unannotated proteins and repeat search using RefSeq and Trembl (if running the full version). In the end, the program will check those entries that had an annotation match but no KO number and will look for other database identifiers (E.C. and InterPro) in the annotation metadata and will try to link those to KO numbers to refine the annotations.
+
+Statistical analysis and visualization
+All analyzed data were loaded to R for further analysis and visualisation using serveral in-house scripts. The in-house scripts are available in the folder 'Scripts'.
 
 # Dependencies of R
 sessionInfo()
