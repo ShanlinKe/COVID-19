@@ -60,10 +60,13 @@ Metagenomic binning: bin contigs into MAGs.
 Part4: 04_refine.sh
 Consolidate bin sets.
 
-Part5: 05_MAGs_taxonomy.sh
+Part5: 05_dereplication.sh
+MAG depreplication to generate unique MAGs.
+
+Part6: 06_MAGs_taxonomy.sh
 High-quality bins were identified to obtain MAGs. The taxonomic annotation was then performed for all MAGs to determine their taxonomic identities and phylogenetic relationships.
 
-Part6: 06_MAGs_function.sh
+Part7: 07_MAGs_function.sh
 MAGs were subjected to tools including Prokka to identify protein-coding and non-coding genes. MicrobeAnnotator uses an iterative approach to annotate microbial genomes (Bacteria, Archaea and Virus) starting from proteins predicted using your favorite ORF prediction tool, e.g. Prodigal. The iterative approach is composed of three or five main steps (depending on the flavor of MicrobeAnnotator you run). Search of initial protein dataset using KOFamscan, extraction of unannotated proteins. Search of proteins extracted in the previous step using UniProt Swissprot database. Extract unannotated proteins and repeat search using RefSeq and Trembl (if running the full version). In the end, the program will check those entries that had an annotation match but no KO number and will look for other database identifiers (E.C. and InterPro) in the annotation metadata and will try to link those to KO numbers to refine the annotations.
 
 Statistical analysis and visualization
