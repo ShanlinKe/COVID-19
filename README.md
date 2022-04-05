@@ -19,10 +19,18 @@ Software	Availability
 | Software  | Availability  |
 | :-----: | :-: |
 | metaWRAP(v1.3.2)| https://github.com/bxlab/metaWRAP |
+| metaSPAdes (v3.13.0)| https://github.com/ablab/spades |
+| MaxBin2  (v2.2.6)| https://github.com/assemblerflow/flowcraft/blob/master/docs/user/components/maxbin2.rst |
+| metaBAT2  (v2.12.1)| https://bitbucket.org/berkeleylab/metabat/src/master/ |
+| CONCOCT  (v1.0.0)| https://github.com/BinPro/CONCOCT |
+| CheckM  (v1.0.12)| https://github.com/Ecogenomics/CheckM |
+| dRep  (v3.0.0)| https://github.com/MrOlm/drep |
+| GTDB-tk  (v1.4.1)| http://gtdb.ecogenomic.org/ |
+| Salmon  (v0.13.1)| https://github.com/COMBINE-lab/salmon |
+| PhyloPhlAn  (v3.0.58)| https://github.com/biobakery/phylophlan |
+| MicrobeAnnotator  (v2.0.5)| https://github.com/cruizperez/MicrobeAnnotator |
 
-
-
-Note: Please make sure all the softwares are in your $PATH.
+Note: Please make sure all the softwares are installed with specific conda environment to avoid unnecessary conflits.
 
 
 
