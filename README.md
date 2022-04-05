@@ -43,7 +43,7 @@ A list of databases and their URLs for downloads:
 | GTDB-tk | https://gtdb.ecogenomic.org/downloads |
 | Kofam/Swissprot/Trembl/RefSeq | https://github.com/cruizperez/MicrobeAnnotator/tree/master/microbeannotator/database |
 
-# metagenomics sequencing data
+# Metagenomics sequencing data
 The example sequencing data can be downloaded from NCBI/ENA/GSA. The accession numbers of those metagenomic studies are PRJNA624223, PRJNA656660, PRJNA660883, PRJNA743981, PRJCA003532, and PRJNA650244. 
 
 
