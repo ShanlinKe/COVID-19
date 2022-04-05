@@ -32,9 +32,16 @@ Software	Availability
 
 Note: Please make sure all the softwares are installed with specific conda environment to avoid unnecessary conflits.
 
+# Databases
+A list of databases and their URLs for downloads:
 
-
-
+| Database  | Availability  |
+| :-----: | :-: |
+| Indexed hg38 | ftp://hgdownload.soe.ucsc.edu/goldenPath/hg38/chromosomes |
+| CheckM | https://data.ace.uq.edu.au/public/CheckM_databases |
+| PhyloPhlAn | https://github.com/biobakery/phylophlan/wiki |
+| GTDB-tk | https://gtdb.ecogenomic.org/downloads |
+| Kofam/Swissprot/Trembl/RefSeq | https://github.com/cruizperez/MicrobeAnnotator/tree/master/microbeannotator/database |
 
 
 
