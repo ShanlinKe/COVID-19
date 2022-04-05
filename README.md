@@ -19,6 +19,9 @@ Software	Availability
 | Attempt | #1  | #2  |
 | :-----: | :-: | :-: |
 | Seconds | 301 | 283 |
+
+
+
 Note: Please make sure all the softwares are in your $PATH.
 
 
