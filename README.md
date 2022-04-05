@@ -13,8 +13,6 @@ Below are a list of softwares and databases required before running out test dat
 # Softwares
 A list of required softwares and URLs for their downloads. Please follow instructions for proper software installation on their respective servers. The versions in the parenthesis indicate the ones we used for our project.
 
-A list of required softwares and URLs for their downloads. Please follow instructions for proper software installation on their respective servers. The versions in the parenthesis indicate the ones we used for our project.
-
 Software	Availability
 | Software  | Availability  |
 | :-----: | :-: |
